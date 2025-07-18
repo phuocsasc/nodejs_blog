@@ -1,10 +1,9 @@
-.test{
-      font-size: 1rem;
-      background-color: red;
-      display: flex;
-}
-
+@use 'variables' as *;
 
 h2{
-      color: green;
+      color: rgb(128, 79, 0);
+}
+h1{
+      color: $red-color;
+      background-color: $background;
 }

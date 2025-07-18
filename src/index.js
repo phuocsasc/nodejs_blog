@@ -7,6 +7,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/.well-known', express.static(path.join(__dirname, 'public/.well-known')));
 
 // HTTP logger
 app.use(morgan('combined'));
