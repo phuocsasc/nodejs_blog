@@ -21,7 +21,7 @@ app.use(express.json());
 // app.use(morgan('combined'));
 
 // Template engine
-app.engine(
+      app.engine(
             'hbs',
             engine({
                   extname: '.hbs',
