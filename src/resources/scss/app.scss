@@ -1,9 +1,9 @@
 @use 'variables' as *;
 
-h2{
-      color: rgb(128, 79, 0);
+h2 {
+    color: rgb(128, 79, 0);
 }
-h1{
-      color: $red-color;
-      background-color: $background;
+h1 {
+          color: $red-color;
+          background-color: $background;
 }
