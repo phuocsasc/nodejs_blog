@@ -21,19 +21,19 @@ app.use(express.json());
 // app.use(morgan('combined'));
 
 // Template engine
-      app.engine(
-            'hbs',
-            engine({
-                  extname: '.hbs',
-            }),
+app.engine(
+    'hbs',
+    engine({
+        extname: '.hbs',
+    }),
 );
-      app.set('view engine', 'hbs');
+app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 // Routes initial
 route(app);
 
 // 127.0.0.1 - localhost
-            app.listen(port, () => {
-            console.log(`App listening on port ${port} http://localhost:${port}/`);
-            });
+app.listen(port, () => {
+    console.log(`App listening on port ${port} http://localhost:${port}/`);
+});
