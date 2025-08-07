@@ -28,10 +28,18 @@
             <thead>
                   <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Stt</th>
-                        <th scope="col">Tên khóa học</th>
-                        <th scope="col">Trình độ</th>
-                        <th scope="col">Thời gian tạo</th>
+                        <th scope="col">ID
+                              {{{sortable '_id' _sort}}}
+                        </th>
+                        <th scope="col">Tên khóa học
+                              {{{sortable 'name' _sort}}}
+                        </th>
+                        <th scope="col">Trình độ
+                              {{{sortable 'level' _sort}}}
+                        </th>
+                        <th scope="col">Thời gian tạo
+                              {{{sortable 'createAt' _sort}}}
+                        </th>
                         <th scope="col">Tùy chọn</th>
 
                   </tr>
@@ -45,7 +53,7 @@
                                           value="{{this._id}}">
                               </div>
                         </td>
-                        <th scope="row">{{sum @index 1}}</th>
+                        <th scope="row">{{this._id}}</th>
                         <td>{{this.name}}</td>
                         <td>{{this.level}}</td>
                         <td>{{this.createdAt}}</td>
